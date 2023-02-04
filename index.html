@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/carrossel.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -43,6 +46,33 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrosel carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/img/livros/ApacheKafka.svg" alt="livro apache kafta"></div>
+                <div class="swiper-slide"><img src="./assets/img/livros/Arquitetura.svg" alt="livro de arquitetura"></div>
+                <div class="swiper-slide"><img src="./assets/img/livros/Javascript.svg" alt="livro javascript"></div>
+                <div class="swiper-slide"><img src="./assets/img/livros/Nodejs.svg" alt="livro node Js"></div>
+                <div class="swiper-slide"><img src="./assets/img/livros/Portugol.svg" alt="Livro portugol"></div>
+                <div class="swiper-slide"><img src="./assets/img/livros/Tuning.svg" alt="livro tuning"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/carrossel.js"></script>
 </body>
 </html>
