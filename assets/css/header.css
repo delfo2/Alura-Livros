@@ -60,7 +60,7 @@
     text-decoration: none;
 }
 
-.container__titulo, .opcoes {
+.container__titulo, .opcoes, .container__texto {
     display: none;
 }
 
@@ -99,5 +99,23 @@
     .opcoes__botao:checked ~ .cabecalho__menu-lista {
         display: block;
         width: auto;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container__texto {
+        display: block;
+    }
+    .container a {
+        align-items: center;
+        color: var(--preto);
+        display: flex;
+        text-decoration: none;
+    }
+    .cabecalho {
+        padding: 0 2em;
+    }
+    .opcoes {
+        margin-right: auto;
     }
 }
