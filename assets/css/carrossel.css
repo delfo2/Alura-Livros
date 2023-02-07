@@ -110,3 +110,24 @@
     width: 75px;
     margin-bottom: 0.5rem;
 }
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    .interesse {
+        width: 40%;
+        margin: 1em auto 3em auto;
+    }
+}
